@@ -1,11 +1,7 @@
-import Main from "./Main";
-import Loading from "./Loading";
+import Footer from "./Footer";
 import Menu from "./Menu";
-import PageTitle from "./PageTitle";
 
 export {
-    Main,
-    Loading,
+    Footer,
     Menu,
-    PageTitle,
 }

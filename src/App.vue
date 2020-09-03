@@ -1,12 +1,18 @@
 <template>
   <v-app id="app">
-    <h1>Oe</h1>
+    <Menu />
+    <home />
+    <Footer />
   </v-app>
 </template>
 
 <script>
+import Home from "@/views/home/Home";
+import { Menu, Footer } from "@/views/template/";
+
 export default {
   name: "App",
+  components: { Home, Menu, Footer },
 };
 </script>
 

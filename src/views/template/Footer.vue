@@ -1,10 +1,10 @@
 <template>
-  <aside class="menu">menu</aside>
+  <footer>asdj</footer>
 </template>
 
 <script>
 export default {
-  name: "Menu",
+  name: "Footer",
 };
 </script>
 
