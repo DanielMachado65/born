@@ -7,12 +7,18 @@
     <div class="lateral-left">Vem fazer parte desse ministério</div>
     <div class="lateral-right">Não esquece da data, do dia: 03/10/2020</div>
     <hr class="lateral-left lateral-hr" color="black" />
+    <Footer />
+
+    
   </v-container>
 </template>
 
 <script>
+import { Footer } from "@/views/template/";
+
 export default {
   name: "Home",
+  components: { Footer },
 };
 </script>
 
