@@ -2,29 +2,28 @@
   <v-container fluid id="home">
     <div class="header">
       <h1>Born III</h1>
-      <h2>O melhor retiro</h2>
+      <h2>@bornministerio</h2>
     </div>
-    <div class="lateral-left">Vem fazer parte desse ministério</div>
-    <div class="lateral-right">Não esquece da data, do dia: 03/10/2020</div>
-    <hr class="lateral-left lateral-hr" color="black" />
+    <div class="lateral-left">Projeto que transforma</div>
+    <div class="lateral-right">Projeto que transforma</div>
     <Footer />
-
-    
+    <About />
   </v-container>
 </template>
 
 <script>
 import { Footer } from "@/views/template/";
+import { About } from "@/components/";
 
 export default {
   name: "Home",
-  components: { Footer },
+  components: { Footer, About },
 };
 </script>
 
 <style scoped>
 #home {
-  height: 80vh;
+  height: 65vh;
 }
 
 #home .header {
@@ -46,8 +45,8 @@ export default {
   text-align: center;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background: black;
-  color: white;
+  border: black 2px solid;
+  border-radius: 20px;
 }
 
 #home .lateral-right,
@@ -56,20 +55,14 @@ export default {
 }
 
 #home .lateral-left {
-  top: 200px;
-  left: -100px;
+  top: 300px;
+  left: -50px;
   transform: rotate(-90deg);
 }
 
 #home .lateral-right {
   top: 300px;
-  right: -120px;
-  transform: rotate(90deg);
-}
-
-#home .lateral-hr {
-  width: 600px;
-  top: 350px;
-  left: -260px;
+  right: -50px;
+  transform: rotate(-90deg);
 }
 </style>
