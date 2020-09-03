@@ -6,6 +6,7 @@
     </div>
     <div class="lateral-left">Vem fazer parte desse ministério</div>
     <div class="lateral-right">Não esquece da data, do dia: 03/10/2020</div>
+    <hr class="lateral-left lateral-hr" color="black" />
   </v-container>
 </template>
 
@@ -17,7 +18,7 @@ export default {
 
 <style scoped>
 #home {
-  height: 100vh;
+  height: 80vh;
 }
 
 #home .header {
@@ -58,5 +59,11 @@ export default {
   top: 300px;
   right: -120px;
   transform: rotate(90deg);
+}
+
+#home .lateral-hr {
+  width: 600px;
+  top: 350px;
+  left: -260px;
 }
 </style>
