@@ -25,6 +25,10 @@ export default {
   font-family: "Montserrat", sans-serif;
 }
 
+#app {
+  background: rgb(231, 231, 231);
+}
+
 body {
   margin: 0;
 }
