@@ -1,7 +1,7 @@
 <template>
   <v-container fluid id="home">
     <div class="header">
-      <h1>Born III</h1>
+      <v-img :src="born" class="born-ministerio-logo" alt="Apresentação" />
       <h2>@bornministerio</h2>
     </div>
     <div class="lateral-left">Projeto que transforma</div>
@@ -12,18 +12,22 @@
 </template>
 
 <script>
+import born from "@/assets/imgs/born-negativo.png";
 import { Footer } from "@/views/template/";
 import { About } from "@/components/";
 
 export default {
   name: "Home",
   components: { Footer, About },
+  data: () => ({
+    born,
+  }),
 };
 </script>
 
 <style scoped>
 #home {
-  height: 65vh;
+  height: 70vh;
 }
 
 #home .header {
@@ -35,9 +39,10 @@ export default {
   justify-content: center;
 }
 
-#home h1 {
-  text-align: center;
-  font-size: 3rem;
+#home .born-ministerio-logo {
+  width: 500px;
+  height: 300px;
+  margin-left: -40px;
 }
 
 #home h2 {
@@ -45,7 +50,7 @@ export default {
   text-align: center;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  border: black 2px solid;
+  border: white 2px solid;
   border-radius: 20px;
 }
 

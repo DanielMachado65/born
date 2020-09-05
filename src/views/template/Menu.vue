@@ -1,7 +1,7 @@
 <template>
   <aside class="menu">
     <div class="logo">
-      <v-img :src="logo" class="logo" width="60" alt="Logo" />
+      <v-img :src="logo" class="logo" width="80" alt="Logo" />
     </div>
     <div class="menu-itens">
       <span class="mr-2">Sobre</span>
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import logo from "../../assets/logo.png";
+import logo from "@/assets/imgs/born-negativo.png";
 export default {
   name: "Menu",
   data: () => ({
