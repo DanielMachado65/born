@@ -10,9 +10,11 @@
     <About />
     <btn-submit />
 
-    <h2 class="text-center subtitle">Born I - Preparado para nascer de novo?</h2>
-    <ExperiencesBornI />
-    <!-- <ExperiencesBornII /> -->
+    <!-- <h2 class="text-center subtitle">Born I - Preparado para nascer de novo?</h2>
+    <ExperiencesBornI /> -->
+
+    <h2 class="text-center subtitle">Born II - Maturidade Espirtual</h2>
+    <ExperiencesBornII />
   </v-container>
 </template>
 
@@ -22,13 +24,13 @@ import { Footer } from "@/views/template/";
 import {
   About,
   BtnSubmit,
-  ExperiencesBornI,
-  // ExperiencesBornII,
+  // ExperiencesBornI,
+  ExperiencesBornII,
 } from "@/components/";
 
 export default {
   name: "Home",
-  components: { Footer, About, BtnSubmit, ExperiencesBornI },
+  components: { Footer, About, BtnSubmit, ExperiencesBornII },
   data: () => ({
     born,
   }),
