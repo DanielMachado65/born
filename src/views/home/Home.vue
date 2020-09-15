@@ -8,17 +8,18 @@
     <div class="lateral-right">Projeto que transforma</div>
     <Footer />
     <About />
+    <btn-submit />
   </v-container>
 </template>
 
 <script>
 import born from "@/assets/imgs/born-negativo.png";
 import { Footer } from "@/views/template/";
-import { About } from "@/components/";
+import { About, BtnSubmit } from "@/components/";
 
 export default {
   name: "Home",
-  components: { Footer, About },
+  components: { Footer, About, BtnSubmit },
   data: () => ({
     born,
   }),
@@ -48,11 +49,9 @@ export default {
 #home h2 {
   width: 300px;
   text-align: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   border: white 2px solid;
   border-radius: 20px;
-  font-family: 'League Gothic', sans-serif;
+  font-family: "League Gothic", sans-serif;
   font-size: 2rem;
   letter-spacing: 3px;
 }
@@ -60,7 +59,7 @@ export default {
 #home .lateral-right,
 #home .lateral-left {
   position: absolute;
-  font-family: 'League Gothic', sans-serif;
+  font-family: "League Gothic", sans-serif;
   font-size: 1.4rem;
 }
 
