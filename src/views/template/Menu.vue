@@ -5,6 +5,7 @@
     </div>
     <div class="menu-itens">
       <span class="mr-4">Sobre</span>
+      <span class="mr-4">Planos</span>
       <span class="mr-5">Loja</span>
       <span class="mr-6">Inscrição</span>
     </div>
