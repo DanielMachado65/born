@@ -1,8 +1,9 @@
 import About from './About'
 import BtnSubmit from './BtnSubmit'
-import Experience from './Experience'
+import ExperiencesBornI from './ExperiencesBornI'
+import ExperiencesBornII from './ExperiencesBornII'
 import FloatPoint from './FloatPoint'
 
 export {
-  About, BtnSubmit, Experience, FloatPoint
+  About, BtnSubmit, ExperiencesBornI, ExperiencesBornII, FloatPoint
 }

@@ -2,24 +2,33 @@
   <v-container fluid id="home">
     <div class="header">
       <v-img :src="born" class="born-ministerio-logo" alt="Apresentação" />
-      <h2>@bornministerio</h2>
+      <h2 class="button">@bornministerio</h2>
     </div>
     <div class="lateral-left">Projeto que transforma</div>
     <div class="lateral-right">Projeto que transforma</div>
     <Footer />
     <About />
     <btn-submit />
+
+    <h2 class="text-center subtitle">Born I - Preparado para nascer de novo?</h2>
+    <ExperiencesBornI />
+    <!-- <ExperiencesBornII /> -->
   </v-container>
 </template>
 
 <script>
 import born from "@/assets/imgs/born-negativo.png";
 import { Footer } from "@/views/template/";
-import { About, BtnSubmit } from "@/components/";
+import {
+  About,
+  BtnSubmit,
+  ExperiencesBornI,
+  // ExperiencesBornII,
+} from "@/components/";
 
 export default {
   name: "Home",
-  components: { Footer, About, BtnSubmit },
+  components: { Footer, About, BtnSubmit, ExperiencesBornI },
   data: () => ({
     born,
   }),
@@ -46,7 +55,7 @@ export default {
   margin-left: -40px;
 }
 
-#home h2 {
+#home h2.button {
   width: 300px;
   text-align: center;
   border: white 2px solid;
@@ -73,5 +82,12 @@ export default {
   top: 380px;
   right: -45px;
   transform: rotate(-90deg);
+}
+
+#home .subtitle {
+  font-family: "League Gothic", sans-serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 20px;
 }
 </style>
