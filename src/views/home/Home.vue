@@ -31,7 +31,7 @@ export default {
 }
 
 #home .header {
-  height: calc(100vh - 30%);
+  height: calc(100vh - 25%);
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -52,22 +52,27 @@ export default {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   border: white 2px solid;
   border-radius: 20px;
+  font-family: 'League Gothic', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 3px;
 }
 
 #home .lateral-right,
 #home .lateral-left {
   position: absolute;
+  font-family: 'League Gothic', sans-serif;
+  font-size: 1.4rem;
 }
 
 #home .lateral-left {
-  top: 300px;
-  left: -50px;
+  top: 380px;
+  left: -45px;
   transform: rotate(-90deg);
 }
 
 #home .lateral-right {
-  top: 300px;
-  right: -50px;
+  top: 380px;
+  right: -45px;
   transform: rotate(-90deg);
 }
 </style>

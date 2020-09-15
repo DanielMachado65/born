@@ -21,20 +21,6 @@ export default {
   --moz-ozx-font-smoothing: grayscale;
 }
 
-@font-face {
-  font-family: LeagueGothic;
-  src: url("/born/src/assets/fonts/LeagueGothic-Regular.otf") format("opentype");
-}
-
-@font-face {
-  font-family: LeagueGothicItalic;
-  src: url("/born/src/assets/fonts/LeagueGothic-Italic.otf") format("opentype");
-}
-
-* {
-  font-family: "LeagueGothic", sans-serif;
-}
-
 #app {
   background: black;
   color: white;
@@ -54,6 +40,6 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: coral;
+  background: purple;
 }
 </style>
