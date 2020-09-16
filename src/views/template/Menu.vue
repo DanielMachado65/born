@@ -12,7 +12,8 @@
 </template>
 
 <script>
-import logo from "@/assets/imgs/born-negativo.png";
+import logo from "../../assets/imgs/born-negativo.png";
+
 export default {
   name: "Menu",
   data: () => ({
