@@ -1,10 +1,10 @@
 <template>
   <aside class="menu">
     <div class="logo">
-      <v-img :src="logo" class="logo" width="80" alt="Logo" />
+      <v-img :src="logo" @click="onClick('home')" class="logo" width="80" alt="Logo" />
     </div>
     <div class="menu-itens">
-      <span class="mr-4">Sobre</span>
+      <span class="mr-5" @click="onClick('plans')">Planos</span>
       <span class="mr-5">Loja</span>
       <span class="mr-6">Inscrição</span>
     </div>
@@ -19,6 +19,11 @@ export default {
   data: () => ({
     logo,
   }),
+  methods: {
+    onClick(router) {
+      this.$router.push({ name: router });
+    },
+  },
 };
 </script>
 
@@ -26,12 +31,17 @@ export default {
 .menu {
   display: flex;
   justify-content: space-between;
-  font-family: 'League Gothic', sans-serif;
+  font-family: "League Gothic", sans-serif;
   font-size: 1.7rem;
 }
 
 .menu .menu-itens {
   align-items: center;
   display: flex;
+  cursor: pointer;
+}
+
+.menu .logo{
+  cursor: pointer;
 }
 </style>

@@ -2,7 +2,7 @@
   <v-container>
     <v-row>
       <v-col md="12">
-        <v-btn color="purple darken-3" class="white--text">Assinar</v-btn>
+        <v-btn color="purple darken-3" class="white--text">{{text}}</v-btn>
       </v-col>
     </v-row>
   </v-container>
@@ -11,6 +11,9 @@
 <script>
 export default {
   name: "BtnSubmit",
+  props: {
+    text: String,
+  },
 };
 </script>
 

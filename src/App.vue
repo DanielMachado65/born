@@ -1,17 +1,16 @@
 <template>
   <v-app id="app">
     <Menu />
-    <home />
+    <router-view />
   </v-app>
 </template>
 
 <script>
-import Home from '../src/views/home/Home';
 import { Menu } from "../src/views/template/";
 
 export default {
   name: "App",
-  components: { Home, Menu },
+  components: { Menu },
 };
 </script>
 

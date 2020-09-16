@@ -8,10 +8,10 @@
     <div class="lateral-right">Projeto que transforma</div>
     <Footer />
     <About />
-    <btn-submit />
+    <btn-submit text="assinar" />
 
     <!-- <h2 class="text-center subtitle">Born I - Preparado para nascer de novo?</h2>
-    <ExperiencesBornI /> -->
+    <ExperiencesBornI />-->
 
     <h2 class="text-center subtitle">Born II - Maturidade Espirtual</h2>
     <ExperiencesBornII />
