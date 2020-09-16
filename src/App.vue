@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import Home from "@/views/home/Home";
-import { Menu } from "@/views/template/";
+import Home from '../src/views/home/Home';
+import { Menu } from "../src/views/template/";
 
 export default {
   name: "App",
