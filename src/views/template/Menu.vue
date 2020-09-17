@@ -5,8 +5,8 @@
     </div>
     <div class="menu-itens">
       <span class="mr-5" @click="onClick('plans')">Planos</span>
-      <span class="mr-5">Loja</span>
-      <span class="mr-6">Inscrição</span>
+      <span class="mr-6" @click="onClick('subscribe')">Inscrição</span>
+      <span class="mr-5" @click="onClick('store')">Loja</span>
     </div>
   </aside>
 </template>
@@ -41,7 +41,7 @@ export default {
   cursor: pointer;
 }
 
-.menu .logo{
+.menu .logo {
   cursor: pointer;
 }
 </style>
