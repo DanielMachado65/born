@@ -8,7 +8,7 @@
     <div class="lateral-right">Projeto que transforma</div>
     <Footer />
     <About />
-    <btn-submit text="assinar" />
+    <btn-submit text="assinar" :onClick="routeToSubscribe" />
 
     <!-- <h2 class="text-center subtitle">Born I - Preparado para nascer de novo?</h2>
     <ExperiencesBornI />-->
@@ -34,6 +34,11 @@ export default {
   data: () => ({
     born,
   }),
+  methods: {
+    routeToSubscribe() {
+      this.$router.push({ name: "subscribe" });
+    },
+  },
 };
 </script>
 

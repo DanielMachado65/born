@@ -2,7 +2,12 @@
   <v-container>
     <v-row>
       <v-col md="12">
-        <v-btn color="purple darken-3" :disabled="disabled" class="white--text">{{text}}</v-btn>
+        <v-btn
+          @click.prevent="onClick"
+          color="purple darken-3"
+          :disabled="disabled"
+          class="white--text"
+        >{{text}}</v-btn>
       </v-col>
     </v-row>
   </v-container>
@@ -14,6 +19,9 @@ export default {
   props: {
     text: String,
     disabled: Boolean,
+    onClick: {
+      type: Function,
+    },
   },
 };
 </script>
