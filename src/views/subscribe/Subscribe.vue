@@ -9,7 +9,7 @@
       </v-row>
       <v-container>
         <v-row>
-          <v-col>
+          <v-col md="6">
             <v-text-field
               type="text"
               label="Nome"
@@ -18,7 +18,7 @@
               persistent-hint
             />
           </v-col>
-          <v-col>
+          <v-col md="6">
             <v-text-field
               type="email"
               label="E-mail"
@@ -37,7 +37,7 @@
         </v-row>
       </v-container>
     </v-card>
-    <Laterals />
+    <Laterals v-if="this.$mq === 'md' || this.$mq === 'lg'" />
   </v-container>
 </template>
 
