@@ -1,16 +1,25 @@
 <template>
-  <v-container fluid id="home">
-    <div class="image">
-      <v-img :src="born" class="born-ministerio-logo" alt="Apresentação" />
-    </div>
-  </v-container>
+  <div>
+    <v-container fluid id="home">
+      <div class="image">
+        <v-img :src="born" class="born-ministerio-logo" alt="Apresentação" />
+      </div>
+    </v-container>
+    <v-container>
+      <StoryLine />
+    </v-container>
+  </div>
 </template>
 
 <script>
 import born from "@/assets/imgs/born.png";
+import StoryLine from "@/components/StoryLine";
 
 export default {
   name: "Home",
+  components: {
+    StoryLine,
+  },
   data: () => ({
     born,
   }),
