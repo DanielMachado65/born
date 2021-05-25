@@ -1,8 +1,6 @@
-import About from './About'
 import BtnSubmit from './BtnSubmit'
-import ExperiencesBornI from './ExperiencesBornI'
-import ExperiencesBornII from './ExperiencesBornII'
+import GoogleOAuth from './GoogleOAuth'
 
 export {
-  About, BtnSubmit, ExperiencesBornI, ExperiencesBornII,
+  BtnSubmit, GoogleOAuth
 }
