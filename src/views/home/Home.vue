@@ -4,8 +4,6 @@
       <v-img :src="born" class="born-ministerio-logo" alt="Apresentação" />
       <h2 class="button">@bornministerio</h2>
     </div>
-    <div class="lateral-left">Projeto que transforma</div>
-    <div class="lateral-right">Projeto que transforma</div>
     <Footer />
     <About />
     <btn-submit text="assinar" :onClick="routeToSubscribe" />
@@ -70,25 +68,6 @@ export default {
   font-family: "League Gothic", sans-serif;
   font-size: 2rem;
   letter-spacing: 3px;
-}
-
-#home .lateral-right,
-#home .lateral-left {
-  position: absolute;
-  font-family: "League Gothic", sans-serif;
-  font-size: 1.4rem;
-}
-
-#home .lateral-left {
-  top: 380px;
-  left: -45px;
-  transform: rotate(-90deg);
-}
-
-#home .lateral-right {
-  top: 380px;
-  right: -45px;
-  transform: rotate(-90deg);
 }
 
 #home .subtitle {

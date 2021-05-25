@@ -37,16 +37,13 @@
         </v-row>
       </v-container>
     </v-card>
-    <Laterals v-if="this.$mq === 'md' || this.$mq === 'lg'" />
   </v-container>
 </template>
 
 <script>
-import { Laterals } from "@/components/";
 export default {
   name: "Subscribe",
   data: () => ({}),
-  components: { Laterals },
 };
 </script>
 
