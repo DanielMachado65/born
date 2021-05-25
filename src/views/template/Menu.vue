@@ -1,11 +1,6 @@
 <template>
   <aside class="menu">
-    <div class="logo">
-      <v-img :src="logo" @click="onClick('home')" class="logo" width="80" alt="Logo" />
-    </div>
     <div class="menu-itens">
-      <span class="mr-5" @click="onClick('plans')">Planos</span>
-      <span class="mr-6" @click="onClick('subscribe')">Inscrição</span>
       <span class="mr-5" @click="onClick('store')">Loja</span>
     </div>
   </aside>
@@ -36,7 +31,8 @@ export default {
 }
 
 .menu .menu-itens {
-  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
   display: flex;
   cursor: pointer;
 }
