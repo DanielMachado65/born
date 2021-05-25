@@ -17,7 +17,6 @@
     "serve-static": "^1.14.1",
     "vue": "^2.6.11",
     "vue-chartkick": "^0.6.1",
-    "vue-google-login": "^2.0.5",
     "vue-gravatar": "^1.4.1",
     "vue-mq": "^1.0.1",
     "vue-router": "^3.5.1",
