@@ -1,16 +1,12 @@
 <template>
   <v-app id="app">
-    <Menu />
     <router-view />
   </v-app>
 </template>
 
 <script>
-import { Menu } from "../src/views/template/";
-
 export default {
   name: "App",
-  components: { Menu },
 };
 </script>
 
